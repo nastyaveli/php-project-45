@@ -1,10 +1,15 @@
-setup: install brain-games brain-even validate lint
+setup: install brain-games brain-calc brain-even validate lint
 
 install:
 	composer install
 
 brain-games:
 	./bin/brain-games
+
+
+
+brain-calc:
+	./bin/brain-calc
 
 brain-even:
 	./bin/brain-even

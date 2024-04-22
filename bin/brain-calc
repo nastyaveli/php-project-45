@@ -4,7 +4,10 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use BrainGames\Cli;
+print_r(correction());
 
-print_r(Cli\greeting());
-//print_r(Cli\askQuestion());
+
+
+
+
+//print(question());
