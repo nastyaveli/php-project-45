@@ -8,7 +8,8 @@
         "files": [
             "src/Cli.php",
             "src/games/EvenGame.php",
-            "src/games/CalcGame.php"
+            "src/games/CalcGame.php",
+            "src/games/GCDGame.php"
         ],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
