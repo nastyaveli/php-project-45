@@ -3,6 +3,7 @@ use function cli\line;
 use function cli\prompt;
 
 line('What number is missing in the progression?');
+
 line("Question: arithmeticProgression()");
 $answer = prompt('Your answer: ');
 

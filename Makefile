@@ -1,4 +1,4 @@
-setup: install brain-games brain-even brain-calc brain-gcd brain-progression validate lint
+setup: install brain-games brain-even brain-calc brain-gcd brain-progression brain-prime validate lint
 
 install:
 	composer install
@@ -18,6 +18,8 @@ brain-gcd:
 brain-progression:
 	./bin/brain-progression
 
+brain-prime:
+	./bin/brain-prime
 
 
 validate:

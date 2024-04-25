@@ -4,4 +4,4 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-print_r(arithmeticProgression());
+print_r(isPrime());
