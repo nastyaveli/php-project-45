@@ -29,12 +29,12 @@ function isPrime()
 function correction()
 {
     global $answer, $name;
-    if ($answer === isPrime() {
+    if ($answer === isPrime()) {
         return 'Correct!';
         //return "'$answer' is wrong answer ;(. Correct answer was 'no'. Let's try again, $name!";
     }
     //return 'Correct!';
-    return "'$answer' is wrong answer ;(. Correct answer was 'no'. Let's try again, $name!";
+    return "'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, $name!";
 }
 
 function congrats()
@@ -43,7 +43,7 @@ function congrats()
     $i = 0;
     while ($counter < 3) {
 
-        if ($correction() !== 'Correct!') {
+        if (correction() !== 'Correct!') {
             return null;
         } else {
             $counter++;
