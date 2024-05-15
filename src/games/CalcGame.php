@@ -16,12 +16,13 @@ function randExpression()
 {
     global $num1, $num2, $sign;
 
-    return match($sign) {
+     $expression = match($sign) {
         '+' => $num1 + $num2,
         '-' => $num1 - $num2,
         '*' => $num1 * $num2,
         default => 'default',
     };
+    return $expression;
 }
 function randSign()
 {
@@ -33,14 +34,13 @@ function randSign()
 
 function correction()
 {
-    global $answer, $name;
+    global $answer, $name, $expression;
     if ($answer !== randExpression()) {
-        //return 'Correct!';
-        return "'$answer' is wrong answer ;(. Correct answer was 'no'. Let's try again, $name!";
+        return "'$answer' is wrong answer ;(. Correct answer was '$expression'. Let's try again, $name!";
     }
     return 'Correct!';
-    //return "'$answer' is wrong answer ;(. Correct answer was 'no'. Let's try again, $name!";
 }
+// функция не видит результат рандомного выражения
 
 function congrats()
 {
@@ -48,7 +48,7 @@ function congrats()
     $i = 0;
     while ($counter < 3) {
 
-        if ($correction() !== 'Correct!') {
+        if (correction() !== 'Correct!') {
             return null;
         } else {
             $counter++;

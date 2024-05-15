@@ -51,4 +51,3 @@ function isEven($randNumber): bool
 }
 
 
-// todo тут будет логика игры
