@@ -21,7 +21,7 @@ function evenGame(): void
 
         $answer = prompt('Your answer:');
 
-        if (isEven($answer) && $answer === 'yes') {
+        if (isEven($randNumber) && $answer === 'yes') {
             return 'Correct!';
         }
         return "yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, $name!";
@@ -33,7 +33,7 @@ function evenGame(): void
         $i = 0;
         while ($counter < 3) {
 
-            if ($randNumber() !== 'Correct!') {
+            if (randNumber() !== 'Correct!') {
                 return null;
             } else {
                 $counter++;
